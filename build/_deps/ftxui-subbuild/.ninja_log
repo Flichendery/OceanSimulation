@@ -1,0 +1,21 @@
+# ninja log v6
+2	72	7706730368574242	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	45682014b1bfe5b4
+2	72	7706730368574242	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	45682014b1bfe5b4
+96	4952	7706730417361355	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	689da015b3ebeb9f
+96	4952	7706730417361355	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	689da015b3ebeb9f
+4952	5164	7706730417435140	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	710932dbe7301be3
+4952	5164	7706730417435140	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	710932dbe7301be3
+5186	5281	7706730420632006	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	1806ecd9daddfcfa
+5186	5281	7706730420632006	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	1806ecd9daddfcfa
+5281	5377	7706730421602885	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	332323841ab60377
+5281	5377	7706730421602885	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	332323841ab60377
+5377	5463	7706730422462071	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	8ca0018dba559338
+5377	5463	7706730422462071	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	8ca0018dba559338
+5463	5570	7706730423550332	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	cea9855fb319f53e
+5463	5570	7706730423550332	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	cea9855fb319f53e
+5570	5658	7706730424407679	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	399b95574930c187
+5570	5658	7706730424407679	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	399b95574930c187
+5659	5802	7706730425868701	CMakeFiles/ftxui-populate-complete	30df12d612f7fb1b
+5659	5802	7706730425868701	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	30df12d612f7fb1b
+5659	5802	7706730425868701	C:/OceanSim/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete	30df12d612f7fb1b
+5659	5802	7706730425868701	C:/OceanSim/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	30df12d612f7fb1b

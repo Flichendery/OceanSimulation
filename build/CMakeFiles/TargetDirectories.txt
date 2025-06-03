@@ -1,0 +1,12 @@
+C:/OceanSim/build/CMakeFiles/OceanSim.dir
+C:/OceanSim/build/CMakeFiles/edit_cache.dir
+C:/OceanSim/build/CMakeFiles/rebuild_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/CMakeFiles/screen.dir
+C:/OceanSim/build/_deps/ftxui-build/CMakeFiles/dom.dir
+C:/OceanSim/build/_deps/ftxui-build/CMakeFiles/component.dir
+C:/OceanSim/build/_deps/ftxui-build/CMakeFiles/edit_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/CMakeFiles/rebuild_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/examples/CMakeFiles/edit_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/examples/CMakeFiles/rebuild_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/doc/CMakeFiles/edit_cache.dir
+C:/OceanSim/build/_deps/ftxui-build/doc/CMakeFiles/rebuild_cache.dir
