@@ -33,23 +33,41 @@ struct Sand : public Entity {
     }
 };
 
+int algae_count = 0;
+const int ALGAE_MAX = 50;
+
+int herbivore_count = 0;
+const int HERBIVORE_MAX = 30;
+
+int predator_count = 0;
+const int PREDATOR_MAX = 20;
+
+
 struct Algae : public Entity {
     int growth_stage = 0;
-    Algae(int x_, int y_) { x = x_; y = y_; type = ALGAE; }
-    void update(const std::vector<std::vector<Entity*>> &grid, std::vector<std::vector<Entity*>> &new_grid) override {
+    int max_height;
+
+    Algae(int x_, int y_) {
+        x = x_; y = y_; type = ALGAE;
+        max_height = 1 + rand() % 3; // индивидуальная максимальная высота: 1–3
+    }
+
+    void update(const std::vector<std::vector<Entity*>> &grid,
+                std::vector<std::vector<Entity*>> &new_grid) override {
         new_grid[y][x] = this;
-        if (growth_stage < 3 && y > 0 && grid[y-1][x] == nullptr && new_grid[y-1][x] == nullptr) {
+        if (growth_stage < max_height && y > 0 && grid[y-1][x] == nullptr && new_grid[y-1][x] == nullptr) {
             new_grid[y-1][x] = new Algae(x, y-1);
             growth_stage++;
         }
     }
+
     Element draw() const override {
         return text("|") | color(Color::Green3) | bgcolor(Color::NavyBlue);
     }
 };
 
 struct HerbivoreFish : public Entity {
-    int hunger = 5;
+    int hunger = 10;
     int reproduce_timer = 0;
 
     HerbivoreFish(int x_, int y_) { x = x_; y = y_; type = HERBIVORE; }
@@ -110,7 +128,7 @@ struct HerbivoreFish : public Entity {
 };
 
 struct PredatorFish : public Entity {
-    int hunger = 7;
+    int hunger = 13;
     int reproduce_timer = 0;
 
     PredatorFish(int x_, int y_) { x = x_; y = y_; type = PREDATOR; }
@@ -165,9 +183,10 @@ struct PredatorFish : public Entity {
     }
 
     Element draw() const override {
-        return text("■") | color(Color::Red) | bgcolor(Color::NavyBlue);
+        return text("■") | color(Color::Red3) | bgcolor(Color::NavyBlue);
     }
 };
+
 
 std::vector<std::vector<Entity*>> grid(height, std::vector<Entity*>(width, nullptr));
 
@@ -237,7 +256,7 @@ void update_simulation() {
     }
 
     // Появление травоядных с небольшой вероятностью
-    if (rand() % 100 < 3) {
+    if (rand() % 100 < 50) {
         int x = rand() % width;
         int y = rand() % (height - 4);
         if (!grid[y][x]) {
@@ -246,7 +265,7 @@ void update_simulation() {
     }
 
     // Появление хищников ещё реже
-    if (rand() % 200 < 1) {
+    if (rand() % 100 < 10) {
         int x = rand() % width;
         int y = rand() % (height - 4);
         if (!grid[y][x]) {
