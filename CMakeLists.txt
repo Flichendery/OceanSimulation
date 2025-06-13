@@ -15,7 +15,13 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(ftxui)
 
 add_executable(OceanSim
-    Ocean.cpp
+    Main.cpp
+    Simulation.cpp
+    PredatorFish.cpp 
+    HerbivoreFish.cpp 
+    Algae.cpp 
+    Sand.cpp 
+    Entity.cpp
 )
 
 target_link_libraries(OceanSim PRIVATE ftxui::screen ftxui::dom ftxui::component)
